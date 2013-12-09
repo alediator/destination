@@ -45,7 +45,7 @@
 
     <properties>
 	<gb.version>1.4-SNAPSHOT</gb.version>
-        <gt.version>10-SNAPSHOT</gt.version>
+        <gt.version>8-SNAPSHOT</gt.version>
         <destination.version>1.0-SNAPSHOT</destination.version>
         <jetty.version>6.1.8</jetty.version>
         <javaassist.version>3.13.0-GA</javaassist.version>
@@ -55,6 +55,7 @@
         <slf4j.version>1.5.11</slf4j.version>
         <!-- <slf4j.version>1.6.6</slf4j.version> -->
         <log4j.version>1.2.17</log4j.version>    
+        <joda-time.version>2.3</joda-time.version>
 <!--
         <allow.test.skip>true</allow.test.skip>
         <allow.test.failure.ignore>false</allow.test.failure.ignore>
@@ -270,7 +271,7 @@
                 <version>${gt.version}</version>
                 <scope>test</scope>
             </dependency>
-            <dependency>
+	        <dependency>
                 <groupId>org.geotools</groupId>
                 <artifactId>gt-shapefile</artifactId>
                 <version>${gt.version}</version>
@@ -278,7 +279,8 @@
             <dependency>
                 <groupId>org.geotools</groupId>
                 <artifactId>gt-transform</artifactId>
-                <version>${gt.version}</version>
+                <!-- <version>${gt.version}</version> -->
+                <version>10-SNAPSHOT</version>
             </dependency>
 
             <!-- ============================== -->
@@ -309,6 +311,13 @@
               <version>${slf4j.version}</version>
             </dependency>
 
+            <!-- Joda time -->
+            <dependency>
+                <groupId>joda-time</groupId>
+                <artifactId>joda-time</artifactId>
+                <version>${joda-time.version}</version>
+            </dependency>
+            
             <!-- ============================== -->
             <!-- Test: JETTY -->
             <!-- ============================== -->

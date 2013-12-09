@@ -102,6 +102,22 @@
             <groupId>org.geotools</groupId>
             <artifactId>gt-opengis</artifactId>
         </dependency>
+        <dependency>
+			<groupId>org.geotools.jdbc</groupId>
+			<artifactId>gt-jdbc-postgis</artifactId>
+			<version>8-SNAPSHOT</version>
+			<scope>test</scope>
+		</dependency>
+		<!--
+        org.geotools.jdbc
+        gt-jdbc-postgis
+        10-SNAPSHOT
+        test 
+        <dependency>
+			<groupId>org.geotools</groupId>
+			<artifactId>gt-postgis-versioned</artifactId>
+			<version>8-SNAPSHOT</version>
+		</dependency> -->
 
 		<!-- =========================================================== -->
 
@@ -134,6 +150,13 @@
 			<version>2.11.0</version>
 		</dependency>
 
+        <!-- Joda time -->
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+        </dependency>
+
+
 		<!-- =========================================================== -->
 		<!-- TEST -->
 		<!-- =========================================================== -->
@@ -162,6 +185,8 @@
             <artifactId>jcl-over-slf4j</artifactId>
             <scope>test</scope>
         </dependency>
+
+
 	</dependencies>
 
 	<build>
